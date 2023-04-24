@@ -48,7 +48,7 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Export to Excel</a>
+                        <a class="nav-link" href="/export">Export to Excel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Logout</a>
@@ -114,6 +114,7 @@
             <div class="overlay"></div>
             <div class="content">
                 <div class="close-btn" onclick="togglePopup()">&times;</div>
+                {{!-- form to enter stock details --}}
                 <form action="/trade.hbs" method="post">
                     <select name="stocks" id="stocks">
                         <option value="Paytm">Paytm</option>
@@ -162,6 +163,7 @@
     </div>
     <hr>
     <div id="contain"></div>
+    {{>footer}}
 </body>
 
 </html>
